@@ -1,9 +1,12 @@
 
 //Question 1
 function calcSimpleInterest(){
-    var P = prompt("Enter the Principle Amount");
-    var R = prompt("Enter the Interest Rate");
-    var T = prompt("Enter the Time Period");
+    var P = parseFloat(prompt("Enter the Principle Amount"));
+    if(isNaN(P)) return;
+    var R = parseFloat(prompt("Enter the Interest Rate"));
+    if(isNaN(R)) return;
+    var T = parseFloat(prompt("Enter the Time Period"));
+    if(isNaN(T)) return;
 
     alert("Calculated Simple Interest: "+ P*R*T/100);
 }
@@ -12,9 +15,11 @@ function calcSimpleInterest(){
 //Question 2
 function isPalindrome(){
     var str = prompt("Enter the String");
-    var res = true;
+    if(str == null || str === "") return;
 
+    var res = true;
     const len = str.length;
+
     for (let i = 0; i < len / 2; i++) {
         if (str[i] !== str[len - 1 - i]) {
             res = false;
@@ -22,15 +27,16 @@ function isPalindrome(){
     }
     
     if(res){
-        alert("Your String is Plaindrome String");
+        alert("Your String "+str+" is Plaindrome String");
     } else{
-        alert("Your String is not Plaindrome String");
+        alert("Your String "+str+" is not Plaindrome String");
     }
 }
 
 // Question 3
 function areaCircle(){
-    var r = prompt("Enter the radius of circle");
+    var r = parseFloat(prompt("Enter the radius of circle"));
+    if(isNaN(r)) return;
 
     alert("Area of circle with radius "+r+ " is "+3.14*r*r);
 }
