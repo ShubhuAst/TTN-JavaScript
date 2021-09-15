@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script src="javaScript.js"></script>
+
+    <style>
+        
+        table{
+           border: 1px solid gray;
+           border-collapse: collapse;
+           width: 50%;
+           margin: 0 auto;
+        }
+
+        tr:nth-child(even){
+           background-color: rgb(212, 204, 204);
+        }
+ 
+        th {
+           background-color: grey;
+           color: white;
+        }
+
+        th,td {
+           padding: 7px;
+           text-align: center;
+        }
+
+        h1{
+           text-align: center;
+        }
+
+        button {
+            padding: 5px;
+            width: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Click on the Question Number to Select</h1>
+    <table>
+        <tr>
+            <th>Questions</th>
+        </tr>
+
+        <tr>
+            <td><button onclick="calcSimpleInterest()">Q1</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="isPalindrome()">Q2</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="areaCircle()">Q3</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="logPropertyToConsole()">Q4</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="objEmployee()">Q5</button></td>
+        </tr>
+
+    </table>
+</body>
+</html>
