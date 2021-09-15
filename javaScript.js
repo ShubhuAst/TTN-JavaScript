@@ -2,11 +2,20 @@
 //Question 1
 function calcSimpleInterest(){
     var P = parseFloat(prompt("Enter the Principle Amount"));
-    if(isNaN(P)) return;
+    if(isNaN(P)){
+        alert("Please provide correct input");
+        return;
+    }
     var R = parseFloat(prompt("Enter the Interest Rate"));
-    if(isNaN(R)) return;
+    if(isNaN(R)){
+        alert("Please provide correct input");
+        return;
+    }
     var T = parseFloat(prompt("Enter the Time Period"));
-    if(isNaN(T)) return;
+    if(isNaN(T)){
+        alert("Please provide correct input");
+        return;
+    }
 
     alert("Calculated Simple Interest: "+ P*R*T/100);
 }
@@ -36,7 +45,10 @@ function isPalindrome(){
 // Question 3
 function areaCircle(){
     var r = parseFloat(prompt("Enter the radius of circle"));
-    if(isNaN(r)) return;
+    if(isNaN(r)){
+        alert("Please provide correct input");
+        return;
+    }
 
     alert("Area of circle with radius "+r+ " is "+3.14*r*r);
 }
