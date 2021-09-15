@@ -27,9 +27,9 @@ function isPalindrome(){
     }
     
     if(res){
-        alert("Your String "+str+" is Plaindrome String");
+        alert("Your String "+str+" is Palindrome String");
     } else{
-        alert("Your String "+str+" is not Plaindrome String");
+        alert("Your String "+str+" is not Palindrome String");
     }
 }
 
