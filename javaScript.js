@@ -2,17 +2,17 @@
 //Question 1
 function calcSimpleInterest(){
     var P = parseFloat(prompt("Enter the Principle Amount"));
-    if(isNaN(P)){
+    if(isNaN(P) || P < 0){
         alert("Please provide correct input");
         return;
     }
     var R = parseFloat(prompt("Enter the Interest Rate"));
-    if(isNaN(R)){
+    if(isNaN(R) || R < 0){
         alert("Please provide correct input");
         return;
     }
     var T = parseFloat(prompt("Enter the Time Period"));
-    if(isNaN(T)){
+    if(isNaN(T) || T < 0){
         alert("Please provide correct input");
         return;
     }
@@ -24,7 +24,10 @@ function calcSimpleInterest(){
 //Question 2
 function isPalindrome(){
     var str = prompt("Enter the String");
-    if(str == null || str === "") return;
+    if(str == null || str === ""){
+        alert("Please provide correct input");
+        return;
+    } 
 
     var res = true;
     const len = str.length;
@@ -45,7 +48,7 @@ function isPalindrome(){
 // Question 3
 function areaCircle(){
     var r = parseFloat(prompt("Enter the radius of circle"));
-    if(isNaN(r)){
+    if(isNaN(r) || r < 0){
         alert("Please provide correct input");
         return;
     }
